@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    
+}
+.main{
+    height: 1000px;
+}
+.header{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+.menu ul{
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+}
+.menu ul li{
+    padding:20px;
+}
+.menu ul li:hover{
+    animation-name: menu1;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    transition: ease-in-out;
+    border-bottom: 3px solid #1A76D1;
+}
+/* ul li:hover animation */
+@keyframes menu1 {
+    from{
+        border-bottom: 0px;
+    }
+    to{
+        border-bottom: 3px solid #1A76D1;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+ul{
+    list-style-type: none;
+
+}
+.logo{
+    padding: 40px;
+    margin: 0px -50px;
+}
+.btn button{
+    width: 180px;
+    height: 50px;
+    background-color: #1A76D1;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius:5px; 
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: #202020;
+    color: white;
+    transition: .2s ease-in-out;
+   
+}
+.fa-caret-down{
+    color: black;
+}
+.section{
+    margin: 120px 0 0 0;
+    z-index: -9;
+}
+.img-section{
+    position: absolute;
+   
+}
+.img-section img{
+    width: 100%;
+}
+.text-section{
+    position: relative;
+    top: 250px;
+    left: 130px;
+   
+}
+.text-section h2{
+    position: absolute;
+    animation-name: animation1;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    font-size: 40px;
+    margin-top: 30px;
+    
+}
+.text-section p{
+    width:700px;
+    color: grey;
+    margin-top: 30px;
+    position: absolute;
+    animation-name: animation2;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: .2s;
+    
+}
+.btn-2 button{
+    height: 50px;
+    width: 170px;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-top: 30px;
+    animation-name: animation3;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    
+}
+.learn-more-btn{
+    height: 50px;
+    width: 110px;
+}
+.appt{
+    background-color: #1A76D1;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+.appt:hover{
+    background-color: #202020;
+    color: white;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.learn-more-btn{
+    background-color: #202020;
+    color: white;
+    border: none;
+}
+.learn-more-btn:hover{
+    background-color: #1A76D1;
+    color: white;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+/* animation for section-bar  -h2 */
+@keyframes animation1 {
+    from{
+        transform: translateY(0px);
+        opacity: 0;
+
+    }
+    to{
+        transform: translateY(-150px);
+        opacity: 1;
+    }
+    
+}
+
+/* animation for section-bar p */
+@keyframes animation2 {
+    from{
+        transform: translateY(0px);
+        opacity: 0;
+
+    }
+    to{
+        transform: translateY(-40px);
+        opacity: 1;
+    }
+    
+}
+/* animation for section-bar btn */
+@keyframes animation3 {
+    from{
+        transform: translateY(0px);
+        opacity: 0;
+
+    }
+    to{
+        
+        transform: translateY(20px);
+        opacity: 1;
+    }
+    
+}

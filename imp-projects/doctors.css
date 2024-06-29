@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    position: relative;
+}
+.header{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+.menu ul{
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+}
+.menu ul li{
+    padding:20px;
+}
+.menu ul li:hover{
+    animation-name: menu1;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    transition: ease-in-out;
+    border-bottom: 3px solid #1A76D1;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.logo{
+    padding: 40px;
+    margin: 0px -50px;
+}
+.btn button{
+    width: 180px;
+    height: 50px;
+    background-color: #1A76D1;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius:5px; 
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: #202020;
+    color: white;
+    transition: .2s ease-in-out;
+   
+}
+.section{
+    display: flex;
+    gap: 150px;
+    margin-top: 150px;
+}
+.search-div{
+    width: 250px;
+    height: 100vh;
+    background-color: lightblue;
+    position: absolute;
+    margin-right: 70px;
+}
+.cards{
+    width: 900px;
+    height: 100vh;
+    background-color: lightblue;
+}
+.texts{
+    transform: rotateY(90deg);
+    z-index: 2;
+    position: relative;
+}
